@@ -1,8 +1,9 @@
 package com.company;
 
 import javax.imageio.ImageIO;
-import javax.media.MediaLocator;
+//import javax.media.MediaLocator;
 import java.awt.*;
+import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -41,9 +42,7 @@ public class Main {
 
         };
         timer.schedule(tt, 0,100);
-        JpegImagesToMovie jpegImagesToMovie = new JpegImagesToMovie();
-        MediaLocator locator = new MediaLocator("C:\\Users\\Andrei\\Documents\\Recordings\\Movies\\Movie.mp4");
-        jpegImagesToMovie.doIt(3072, 1920, 10, images, locator);
+
 
     }
 }
